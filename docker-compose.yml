@@ -6,8 +6,6 @@ services:
     container_name: personal_website
     ports:
       - "3000:3000"
-    networks:
-      - web
     restart: unless-stopped
   
   caddy:
@@ -15,12 +13,8 @@ services:
     container_name: reverse_proxy
     ports:
       - "80:80"
-      - "443:443"
+      #- "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
     depends_on:
       - personal_website
-
-networks:
-  web:
-    external: true
