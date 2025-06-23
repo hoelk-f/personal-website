@@ -150,6 +150,9 @@ export default function App() {
               <div className="mt-3 ml-4 pl-4 border-l border-neutral-800 group-hover:border-teal-400 transition">
                 <div className="flex items-center gap-2 text-sm text-neutral-400 mt-1">
                   <i className="fa-brands fa-github text-[13px] text-neutral-500 w-4"></i>
+                  <a href="https://smart-city-urban-heat-monitoring.com" target="_blank" rel="noreferrer" className="hover:text-teal-400">
+                    Demo
+                  </a>
                   <a href="https://github.com/hoelk-f/smart-city-urban-heat-monitoring" target="_blank" rel="noreferrer" className="hover:text-teal-400">
                     GitHub
                   </a>
