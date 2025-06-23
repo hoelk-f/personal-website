@@ -5,7 +5,7 @@ services:
     build: .
     container_name: personal_website
     ports:
-      - "3000:3000"
+      - "5000:5000"
     restart: unless-stopped
   
   caddy:

@@ -10,7 +10,7 @@
 
 :80 {
   handle {
-    reverse_proxy personal_website:3000
+    reverse_proxy personal_website:5000
   }
 }
 
