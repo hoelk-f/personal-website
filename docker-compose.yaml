@@ -7,13 +7,12 @@ services:
     ports:
       - "5000:5000"
     restart: unless-stopped
-  
+
   caddy:
     image: caddy:2
     container_name: reverse_proxy
     ports:
       - "80:80"
-      #- "443:443"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
