@@ -87,7 +87,7 @@ export default function App() {
             </div>
 
             <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
-              <h4 className="text-lg font-semibold text-neutral-200">Freelance Software Developer @ ConVista Consultung AG</h4>
+              <h4 className="text-lg font-semibold text-neutral-200">Freelance Software Developer @ ConVista Consulting AG</h4>
               <p className="text-sm text-neutral-500">12/2021</p>
               <p className="mt-2 text-neutral-400">
                 Independent development work on SAP Supplier Portal integration and customization.
