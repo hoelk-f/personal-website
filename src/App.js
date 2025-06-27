@@ -43,10 +43,10 @@ export default function App() {
               FH
             </a>
             <div className="hidden md:flex gap-6 text-sm text-neutral-400 items-center">
-                            <a href="#experience" className="hover:text-teal-400 transition">Experience</a>
+              <a href="#experience" className="hover:text-teal-400 transition">Experience</a>
+              <a href="#education" className="hover:text-teal-400 transition">Education</a>
               <a href="#projects" className="hover:text-teal-400 transition">Research Projects</a>
               <a href="#research" className="hover:text-teal-400 transition">Research</a>
-              
             </div>
           </nav>
         </header>
@@ -60,8 +60,8 @@ export default function App() {
             />
             <div>
               <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight text-neutral-100">Hi, I'm Florian.</h2>
-              <p className="text-lg md:text-xl text-neutral-400 max-w-3xl">
-                Scientific Researcher at the University of Wuppertal, in the Semantic Systems Engineering research group.
+              <p className="text-lg md:text-xl text-neutral-400 max-w-5xl">
+                Scientific Researcher at the University of Wuppertal, in the Semantic Systems Engineering Research Group.
               </p>
             </div>
           </div>
@@ -74,28 +74,62 @@ export default function App() {
               <h4 className="text-lg font-semibold text-neutral-200">Scientific Researcher @ University of Wuppertal</h4>
               <p className="text-sm text-neutral-500">09/2023 – present</p>
               <p className="mt-2 text-neutral-400">
-                Focus on improving data usability in heterogeneous environments using semantic technologies.
+                Focus on improving Data Usability in Heterogeneous Environments using Semantic Technologies.
               </p>
             </div>
+
             <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
               <h4 className="text-lg font-semibold text-neutral-200">Technical Assistant @ University of Wuppertal</h4>
               <p className="text-sm text-neutral-500">01/2022 – 04/2023</p>
               <p className="mt-2 text-neutral-400">
-                AI research and development in industrial environments.
+                AI Research and Development in Industrial Environments.
               </p>
             </div>
+
+            <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
+              <h4 className="text-lg font-semibold text-neutral-200">Freelance Software Developer @ ConVista Consultung AG</h4>
+              <p className="text-sm text-neutral-500">12/2021</p>
+              <p className="mt-2 text-neutral-400">
+                Independent development work on SAP Supplier Portal integration and customization.
+              </p>
+            </div>
+
             <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
               <h4 className="text-lg font-semibold text-neutral-200">Working Student in Controlling @ Vorwerk Automotive</h4>
               <p className="text-sm text-neutral-500">02/2019 – 01/2022</p>
               <p className="mt-2 text-neutral-400">
-                Process optimization, data engineering and data analysis.
+                Process Optimization, Data Engineering and Data Analysis.
               </p>
             </div>
+
             <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
               <h4 className="text-lg font-semibold text-neutral-200">IT Student Assistant @ University of Wuppertal</h4>
               <p className="text-sm text-neutral-500">02/2013 – 02/2019</p>
               <p className="mt-2 text-neutral-400">
-                Technical support and IT services at the Institute for Educational Research.
+                Technical Support and IT Services at the Institute for Educational Research.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section className="mb-40 scroll-mt-32" id="education">
+          <h3 className="text-3xl font-semibold mb-8 text-neutral-100">Education</h3>
+          <div className="space-y-6">
+            <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
+              <h4 className="text-lg font-semibold text-neutral-200">
+                M.Sc. in Computer Science
+              </h4>
+              <p className="mt-2 text-neutral-400">
+                Master's thesis: <em>Neuroscience-inspired Ablation Studies for Vision Transformer</em>
+              </p>
+            </div>
+            <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
+              <h4 className="text-lg font-semibold text-neutral-200">
+                B.A. in Computer Science and Economics
+              </h4>
+              <p className="mt-2 text-neutral-400">
+                Bachelor's thesis: <em>Application of Machine Learning in Scientific Computing</em>
               </p>
             </div>
           </div>
@@ -137,25 +171,26 @@ export default function App() {
         <section className="mb-40 scroll-mt-32" id="research">
           <h3 className="text-3xl font-semibold mb-8 text-neutral-100">Research</h3>
           <div className="space-y-6">
-            <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition group">
+
+            <div className="border border-neutral-800 border-l-4 border-l-neutral-800 border-r-4 border-r-neutral-800 rounded-xl p-6 hover:border-l-teal-400 hover:border-r-teal-400 transition">
               <h4 className="text-lg font-semibold text-neutral-200">
                 Smart City Urban Heat Monitoring using a Solid-based Dataspace
               </h4>
               <p className="text-sm text-neutral-500">
                 Hölken, F., Paulus, A., Meisen, T., & Pomp, A. (Accepted – Not Yet Published)
               </p>
-              <p className="mt-2 text-neutral-400">
+              <p className="text-sm text-neutral-500 mt-1">
                 ESWC2025: The Third International Workshop on Semantics in Dataspaces (SDS 2025), June 2025, Portorož, Slovenia.
               </p>
-              <div className="mt-3 ml-4 pl-4 border-l border-neutral-800 group-hover:border-teal-400 transition">
-                <div className="flex items-center gap-2 text-sm text-neutral-400">
+              <div className="mt-3 space-y-1 text-sm text-neutral-400">
+                <div className="flex items-center gap-2">
                   <i className="fa-solid fa-desktop text-neutral-500 w-4 text-[14px]"></i>
                   <a href="https://smart-city-urban-heat-monitoring.com" target="_blank" rel="noreferrer" className="hover:text-teal-400">
                     Demo
                   </a>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-neutral-400 mt-1">
-                  <i className="fa-brands fa-github text-[13px] text-neutral-500 w-4"></i>
+                <div className="flex items-center gap-2">
+                  <i className="fa-brands fa-github text-neutral-500 w-4 text-[14px]"></i>
                   <a href="https://github.com/hoelk-f/smart-city-urban-heat-monitoring" target="_blank" rel="noreferrer" className="hover:text-teal-400">
                     GitHub
                   </a>
@@ -163,24 +198,24 @@ export default function App() {
               </div>
             </div>
 
-            <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition group">
+            <div className="border border-neutral-800 border-l-4 border-l-neutral-800 border-r-4 border-r-neutral-800 rounded-xl p-6 hover:border-l-teal-400 hover:border-r-teal-400 transition">
               <h4 className="text-lg font-semibold text-neutral-200">
                 Bridging the Discovery Gap in Solid Dataspaces with a Semantic Data Catalog
               </h4>
               <p className="text-sm text-neutral-500">
                 Hölken, F., Paulus, A., Meisen, T., & Pomp, A. (Accepted – Not Yet Published)
               </p>
-              <p className="mt-2 text-neutral-400">
+              <p className="text-sm text-neutral-500 mt-1">
                 2nd Solid Symposium, April 2025, Leiden, Netherlands.
               </p>
-              <div className="mt-3 ml-4 pl-4 border-l border-neutral-800 group-hover:border-teal-400 transition">
-                <div className="flex items-center gap-2 text-sm text-neutral-400">
+              <div className="mt-3 space-y-1 text-sm text-neutral-400">
+                <div className="flex items-center gap-2">
                   <i className="fa-solid fa-desktop text-neutral-500 w-4 text-[14px]"></i>
                   <a href="https://semantic-data-catalog.com" target="_blank" rel="noreferrer" className="hover:text-teal-400">
                     Demo
                   </a>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-neutral-400 mt-1">
+                <div className="flex items-center gap-2">
                   <i className="fa-brands fa-github text-neutral-500 w-4 text-[14px]"></i>
                   <a href="https://github.com/hoelk-f/semantic-data-catalog" target="_blank" rel="noreferrer" className="hover:text-teal-400">
                     GitHub
@@ -188,44 +223,37 @@ export default function App() {
                 </div>
               </div>
             </div>
-            <a
-              href="https://link.springer.com/article/10.1365/s40702-024-01119-7"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
-            >
-              <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
+
+            <a href="https://link.springer.com/article/10.1365/s40702-024-01119-7" target="_blank" rel="noreferrer" className="block">
+              <div className="border border-neutral-800 border-l-4 border-l-neutral-800 border-r-4 border-r-neutral-800 rounded-xl p-6 hover:border-l-teal-400 hover:border-r-teal-400 transition">
                 <h4 className="text-lg font-semibold text-neutral-200">
                   IoT4H: Datengewinnung und -nutzung für innovative Geschäftsmodelle im Handwerk
                 </h4>
                 <p className="text-sm text-neutral-500">
                   Paulus, A., Hölken, F., Chmielewski, S., & Pomp, A. (2024)
                 </p>
-                <p className="mt-2 text-neutral-400">
+                <p className="text-sm text-neutral-500 mt-1">
                   <em>HMD Praxis der Wirtschaftsinformatik</em>, 61(6), 1540–1550.
                 </p>
               </div>
             </a>
-            <a
-              href="https://www.mdpi.com/2571-5577/7/1/11"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
-            >
-              <div className="border-l border-neutral-800 pl-6 hover:border-teal-400 transition">
+
+            <a href="https://www.mdpi.com/2571-5577/7/1/11" target="_blank" rel="noreferrer" className="block">
+              <div className="border border-neutral-800 border-l-4 border-l-neutral-800 border-r-4 border-r-neutral-800 rounded-xl p-6 hover:border-l-teal-400 hover:border-r-teal-400 transition">
                 <h4 className="text-lg font-semibold text-neutral-200">
-                  Deep learning for automated visual inspection in manufacturing and maintenance: a survey of open-access papers
+                  Deep Learning for Automated Visual Inspection in Manufacturing and Maintenance: A Survey of Open Access Papers
                 </h4>
                 <p className="text-sm text-neutral-500">
                   Hütten, N., Alves Gomes, M., Hölken, F., Andricevic, K., Meyes, R., & Meisen, T. (2024)
                 </p>
-                <p className="mt-2 text-neutral-400">
+                <p className="text-sm text-neutral-500 mt-1">
                   <em>Applied System Innovation</em>, 7(1), 11.
                 </p>
               </div>
             </a>
           </div>
         </section>
+
 
         <footer className="text-center text-sm text-neutral-500 pb-0">
           &copy; Florian Hölken
