@@ -8,7 +8,7 @@
 # this machine's public IP, then replace ":80" below with your
 # domain name.
 
-florian-hoelken.de {
+florian-hoelken.de, www.florian-hoelken.de {
   handle {
     reverse_proxy personal_website:5000
   }
